@@ -1,38 +1,435 @@
-.App {
+html {
+}
+
+.loader{
+  background-color: green;
+  width: 100%;
+  height: 100%;
+}
+
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "PT Serif", serif;
+  background: linear-gradient(
+      to top,
+      rgba(254, 255, 239, 0.774) 0%,
+      rgb(240, 248, 153) 30%,
+      rgb(126, 160, 115) 100%
+    )
+    fixed;
+  background-repeat: no-repeat;
+}
+
+.Text1 {
+  margin-top: 120px;
+  margin-left: 70px;
+  display: inline-block;
+}
+
+.Text1 #H1 {
+  font-size: 100px;
+  animation: Text 1s ease-in;
+}
+
+.Text1 #T1 {
+  margin-top: -50px;
+  margin-left: 45px;
+  font-size: 110px;
+  animation: Text 1.5s ease-in-out;
+}
+
+.Text1 #T2 {
+  width: 550px;
+  margin-top: -10px;
+  margin-left: 0px;
+  font-size: 40px;
+  animation: Text 1.5s ease-in-out;
+}
+
+@keyframes Text {
+  0% {
+    margin-left: -70px;
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+/* .img1{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  animation: img 1.3s ease-in-out;
+  border: 10px solid #def0d4;
+  border-radius: 50%;
+} */
+
+/* .img2{
+  position: absolute;
+  margin-left: 130px;
+  border-radius: 50%;
+  animation: img 1.4s ease-in-out;
+  border: 10px solid #def0d4;
+  width: 200px;
+  height: 200px;
+} */
+
+/* #p1{
+  position: absolute;
+  top: 600px;
+  font-size: 40px;
+  left: 35px;
+  animation: Text 2s ease-in-out;
+}
+
+#p1a{
+  position: absolute;
+  top: 650px;
+  left: 50px;
+  font-size: 20px;
+  animation: Text 2.8s ease-in-out;
+
+} */
+
+/* #p2{
+  position: absolute;
+  top: 580px;
+  font-size: 40px;
+  left: 160px;
+  animation: Text 2.5s ease-in-out;
+
+}
+
+#p2a{
+  position: absolute;
+  top: 640px;
+  left: 175px;
+  font-size: 20px;
+  animation: Text 2.8s ease-in-out;
+} */
+
+.icon-3 {
+  width: 800px;
+  height: 900px;
+  display: inline-block;
+  position: absolute;
+  top: -40px;
+  right: 30px;
+  animation: in-right 1.6s ease-in-out;
+}
+.social-links ul li {
+  padding: 10px;
+  animation: Text 1.8s ease-in-out;
+}
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: -15px !important;
+  padding: 0px;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+.social-network a.icoFacebook:hover {
+  background-color: #3b5998;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+.social-network a.icoTwitter:hover {
+  background-color: #007bb7;
+}
+.social-network a.icoInstagram:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i,
+.social-network a.icoInstagram:hover i,
+.social-network a.icoTwitter:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44bcdd;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
   text-align: center;
+  width: 35px;
+  height: 35px;
+  font-size: 23px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#btn1 {
+  background-color: rgb(126, 160, 115);
+  margin-top: 40px;
+  font-size: 20px;
+  transition: 0.5s;
+  animation: Text 1.8s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#btn1:hover {
+  background-color: rgb(85, 110, 47);
+  color: black;
+  font-size: 17px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+  animation: rotate 2s ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes rotate {
+  0%{transform: rotate(0deg);
+      transition: all 0.2s;
+    
+    }
+  100%{transform: rotate(360deg);
+      transition: all 0.2s;
+    
+    }
+  
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  
+  transform: rotate(360deg);
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: greenyellow;
+}
+
+@keyframes img {
+  0% {
+    margin-top: -50px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@keyframes in-right {
+  0% {
+    right: 0px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes in-mright {
+  0% {
+    top: 300px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+  
+.content2{
+  position: absolute;
+  top: 900px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.Text2{
+  margin-top: 150px;
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  color: rgb(21, 88, 47);
+  animation: Text 1.2s ease-in-out;
+}
+.icon4{
+  width: 850px;
+  margin-left: 20px;
+  display: inline-block;
+  animation: img 1.2s ease-in-out;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Text3{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content:space-around;
+  animation: Text 1.2s ease-in-out;
+
+}
+
+.Text ul{
+
+}
+
+.Text3 li{
+  list-style: none;
+  font-size: 23px;
+  animation: Text 2.2s ease-in-out;
+
+}
+
+.Text3 h1{
+  font-size: 50px;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+  .body {
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  /* .img {
+    width: 250px;
+    height: 250px;
+  } */
+
+  .Text1 {
+    position: relative;
+    display: inline-block;
+
+    align-items: center;
+    top: -280px;
   }
+  .Text1 #H1 {
+    font-size: 50px;
+    animation: Text 1s ease-in;
+    display: inline-block;
+
+    margin-left: -20px;
+  }
+
+  .Text1 #T1 {
+    margin-top: -20px;
+    margin-left: 25px;
+    font-size: 50px;
+    animation: Text 1.5s ease-in-out;
+    display: inline-block;
+  }
+
+  .Text1 #T2 {
+    text-align: center;
+    width: 340px;
+    margin-top: 10px;
+    margin-left: -50px;
+    font-size: 20px;
+    animation: Text 1.5s ease-in-out;
+    display: inline-block;
+  }
+  .social-links {
+    margin-left: auto;
+    margin-top: 20px;
+  }
+  #btn1 {
+    margin-left: 30px;
+  }
+
+  #btn1:hover {
+    font-size: 19px;
+  }
+  .icon-3 {
+    position: relative;
+    display: inline-block;
+    top: 400px;
+    margin-left: 78px;
+    width: 75%;
+    height: 75%;
+    animation: in-mright 1.6s ease-in-out;
+  }
+  .Text2{
+    margin-top: 40px;
+  }
+  .content2 {
+    position: relative;
+    top: 40px;
+    height: 550px;
+    justify-content: space-between;
+  }
+  .icon4 {
+    width: 350px;
+  }
+  .Text3{
+    flex-flow: column;
+
+  }
+
+  .Text3 h1{
+    font-size: 27px;
+    text-align: center;
+  }
+  .Text3 ul li{
+    font-size: 12px;
+  }
+ 
+
+
+
+  /* .img1{
+    margin-left: -25px;
+    width: 150px;
+    height: 150px;
+  }
+  #p1{
+    position: absolute;
+    top: 260px;
+    left: -28px;
+    width: 200px;
+    font-size: large;
+  }
+  #p1a{
+    position: absolute;
+    top: 285px;
+    left: -20px;
+    font-size: 10px;
+  }
+  .img2{
+    margin-left: 130px;
+    width: 150px;
+    height: 150px;
+  }
+  #p2{
+    position: absolute;
+    font-size: large;
+    top: 260px;
+    left: 135px;
+    width: 200px;
+  }
+  #p2a{
+    position: absolute;
+    top: 285px;
+    left: 150px;
+    font-size: 10px;
+  } */
 }
